@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Herói das Chamas</title>
+    <style>
+        /* Espaçamento para o efeito de transição entre as salas */
+        div {
+            margin-top: 80vh;
+        }
+        #rua {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>👨‍🚒 Herói das Chamas</h1>
+    <p><strong>Missão:</strong> Navegue pela casa em chamas e encontre a pessoa que precisa de resgate!</p>
+    <hr>
+
+    <!-- 1. RUA -->
+    <div id="rua">
+        <h2>📍 Local: Rua (Entrada)</h2>
+        <p>A fumaça está saindo pelas janelas. Por onde você prefere entrar?</p>
+        <ul>
+            <li><a href="#sala">Entrar pela porta principal (Sala)</a></li>
+            <li><a href="#quintal">Dar a volta pelo Quintal</a></li>
+        </ul>
+    </div>
+
+    <!-- 2. QUINTAL -->
+    <div id="quintal">
+        <h2>📍 Local: Quintal</h2>
+        <p>O calor é intenso nos fundos da casa.</p>
+        <ul>
+            <li><a href="#cozinha">Entrar pela porta dos fundos (Cozinha)</a></li>
+            <li><a href="#rua">Voltar para a Rua</a></li>
+        </ul>
+    </div>
+
+    <!-- 3. SALA -->
+    <div id="sala">
+        <h2>📍 Local: Sala de Estar</h2>
+        <p>Móveis estão queimando. Para onde você vai?</p>
+        <ul>
+            <li><a href="#corredor">Ir para o Corredor dos quartos</a></li>
+            <li><a href="#cozinha">Ir para a Cozinha</a></li>
+            <li><a href="#rua">Sair de volta para a Rua</a></li>
+        </ul>
+    </div>
+
+    <!-- 4. COZINHA -->
+    <div id="cozinha">
+        <h2>📍 Local: Cozinha</h2>
+        <p>Muitas labaredas no fogão. Não há ninguém aqui.</p>
+        <ul>
+            <li><a href="#sala">Voltar para a Sala</a></li>
+            <li><a href="#quintal">Sair para o Quintal</a></li>
+        </ul>
+    </div>
+
+    <!-- 5. CORREDOR -->
+    <div id="corredor">
+        <h2>📍 Local: Corredor</h2>
+        <p>A visibilidade é pouca por causa da fumaça. Escolha um local:</p>
+        <ul>
+            <li><a href="#banheiro">Entrar no Banheiro</a></li>
+            <li><a href="#quarto1">Entrar no Quarto de Hóspedes</a></li>
+            <li><a href="#vitoria">Entrar na Suíte Principal</a></li>
+            <li><a href="#sala">Voltar para a Sala</a></li>
+        </ul>
+    </div>
+
+    <!-- 6. BANHEIRO -->
+    <div id="banheiro">
+        <h2>📍 Local: Banheiro</h2>
+        <p>Você procurou em tudo, mas o cômodo está vazio!</p>
+        <ul>
+            <li><a href="#corredor">Voltar para o Corredor</a></li>
+        </ul>
+    </div>
+
+    <!-- 7. QUARTO DE HÓSPEDES -->
+    <div id="quarto1">
+        <h2>📍 Local: Quarto de Hóspedes</h2>
+        <p>Procurou debaixo da cama e no armário. Ninguém aqui!</p>
+        <ul>
+            <li><a href="#corredor">Voltar para o Corredor</a></li>
+        </ul>
+    </div>
+
+    <!-- 8. VITÓRIA -->
+    <div id="vitoria">
+        <h2>🎉 VITÓRIA! (Suíte Principal)</h2>
+        <p><strong>Você encontrou a pessoa no canto da Suíte Principal!</strong></p>
+        <p>Você a colocou em segurança e salvou o dia com sucesso. Parabéns!</p>
+        <br>
+        <a href="#rua">🔄 Jogar Novamente</a>
+    </div>
+
+</body>
+</html>
